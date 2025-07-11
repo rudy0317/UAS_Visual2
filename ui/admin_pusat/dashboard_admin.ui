@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DashboardAdmin</class>
+ <widget class="QMainWindow" name="DashboardAdmin">
+  <property name="windowTitle">
+   <string>Dashboard Admin Pusat</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+
+    <item>
+     <layout class="QGridLayout" name="gridLayoutCards">
+      <!-- Tempat untuk 4 kartu Provinsi, Kabupaten, Kecamatan, Madrasah -->
+      <!-- Kartu-kartu ini akan di-generate dari Python -->
+     </layout>
+    </item>
+
+    <item>
+     <widget class="QLabel" name="labelGrafik">
+      <property name="text">
+       <string>Distribusi Madrasah per Jenjang</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 16pt; font-weight: bold; margin: 10px;</string>
+      </property>
+     </widget>
+    </item>
+
+    <item>
+     <widget class="QWidget" name="chartContainer" native="true"/>
+     <!-- Nanti diisi FigureCanvas matplotlib dari Python -->
+    </item>
+
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

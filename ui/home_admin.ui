@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HomeAdmin</class>
+ <widget class="QMainWindow" name="HomeAdmin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>629</width>
+    <height>377</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dashboard Admin Pusat</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="sidebarLayout">
+      <item>
+       <widget class="QPushButton" name="btnDashboard">
+        <property name="text">
+         <string>Dashboard</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnMadrasahGabungan">
+        <property name="text">
+         <string>Data Madrasah</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnProvinsi">
+        <property name="text">
+         <string>Data Provinsi</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnKabupaten">
+        <property name="text">
+         <string>Data Kabupaten</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnKecamatan">
+        <property name="text">
+         <string>Data Kecamatan</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnLogout">
+        <property name="text">
+         <string>Logout</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="stackedPages">
+      <widget class="QWidget" name="pageDashboard">
+       <layout class="QVBoxLayout" name="pageDashboardLayout">
+        <item>
+         <widget class="QLabel" name="labelDashboard">
+          <property name="text">
+           <string>Selamat Datang di Dashboard Admin</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="pageMadrasah">
+       <layout class="QVBoxLayout" name="pageMadrasahLayout">
+        <item>
+         <widget class="QLabel" name="labelMadrasahAll">
+          <property name="text">
+           <string>Form Madrasah</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
